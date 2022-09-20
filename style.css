@@ -1,1 +1,59 @@
-
+#name-heading{
+    color: darkcyan;
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 2%;
+}
+#top-line{
+    border: none;
+    background-color: darkcyan;
+    opacity: 80%;
+    height: 3px;
+    width: 92%;
+}
+p {
+    text-align: center;
+    padding-top: 5px;
+    color: darkcyan;
+}
+#contact-info{
+    color: black;
+}
+#github-link{
+    color: black;
+    /*text-decoration-thickness: 1.2px;*/
+    text-decoration: none;
+}
+.nav-link{
+    position: relative;
+}
+.nav-link active{
+    position: relative;
+}
+.award-list{
+    color: darkcyan;
+    display: inline-block;
+}
+.line-item{
+    text-align: center;
+    padding: 10px;
+}
+.experience-list{
+    color: darkcyan;
+    display: inline-block;
+}
+.miscellaneous-list{
+    color: darkcyan;
+    display: inline-block;
+}
+#edu-header{
+    padding: 10px;
+}
+#pic{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 20%;
+}
