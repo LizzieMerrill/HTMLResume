@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elizabeth's Resumé</title>
+</head>
+<body>
+    <header id="nav-header">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: lightseagreen;">
+            <div class="container-fluid">
+                <a class="navbar-brand">Resumé</a>
+                <center><div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="education.html">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="certifications.html">Certifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+                        </li>
+                    </ul>
+                </div></center>
+            </div>
+        </nav>
+    </header>
+
+<h1 id="name-heading"><b>Portfolio</b></h1>
+    <center><hr id="top-line"></center>
+    
+    <div class="portfolio-container">
+        <div class="portfolio-column">
+            <h2 class="section-title">General Portfolio</h2>
+            
+            <div class="portfolio-section">
+                <h3 style="color: darkcyan; font-size: 20px; margin-bottom: 15px;">Working Repositories</h3>
+                
+                <div class="project-item">
+                    <a href="#" class="project-link" onclick="alert('Cannot open private repository. Please request a demo to view this project.'); return false;">
+                        phil-majors<span class="private-badge">PRIVATE</span>
+                    </a>
+                    <p class="project-description">
+                        A student tracking website developed for the BYU Department of Philosophy during my Computer Specialist position. Built with PHP, C#, JavaScript, SQL, HTML, and CSS to streamline data entry workflows and enhance reporting features for faculty and staff. This repository must remain private to protect student and faculty personal information, but I'm happy to present the work and discuss technical details upon request.
+                    </p>
+                </div>
+                
+                <div class="project-item">
+                    <a href="https://github.com/LizzieMerrill/HTMLResume" class="project-link" target="_blank">HTMLResume</a>
+                    <p class="project-description">
+                        A responsive resume created in HTML and CSS (you're looking at it right now!).
+                    </p>
+                </div>
+                
+                <div class="project-item">
+                    <a href="https://github.com/LizzieMerrill/image-editor" class="project-link" target="_blank">image-editor</a>
+                    <p class="project-description">
+                        An image editor written in TypeScript that applies effects to PPM image files. <br><strong>Supported filters:</strong> motionblur, invert, emboss, grayscale. <br><strong>Usage:</strong>
+                    </p>
+                    <ul class="project-description">
+                        <li>To convert any image to PPM format, open the image in GIMP, select "Export As", then change the file extension to PPM. Click "Export", then select "ASCII" (otherwise it won't work). Then, go into the image file, and remove the comment so only the P3 header and numbers remain.</li>
+                        <li>From ./src, run: <code>ts-node imageeditor.ts &lt;imagePath&gt; &lt;sameImagePath&gt; &lt;filterType&gt;</code></li>
+                        <li>Reopen the modified image in GIMP to view results.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="portfolio-section">
+                <h3 style="color: darkcyan; font-size: 20px; margin-bottom: 15px;">Relevant Non-Working Repositories</h3>
+                
+                <div class="project-item">
+                    <a href="https://github.com/LizzieMerrill/tweeter-web-starter" class="project-link" target="_blank">tweeter-web-starter</a>
+                    <p class="project-description">
+                        <em>(BYU CS 340 Project)</em> – My largest solo project to date — a social media web app with most major features functional.
+                    </p>
+                    <ul class="project-description">
+                        <li><strong>Tech:</strong> TypeScript, Node.js, AWS, shared modular architecture</li>
+                        <li><strong>Note:</strong> Login and registration are currently disabled because the AWS hosting expired.</li>
+                        <li><strong>To run locally:</strong>
+                            <ol>
+                                <li>In tweeter-shared, run <code>npm run build</code></li>
+                                <li>In tweeter-web, run <code>npm start</code></li>
+                            </ol>
+                        </li>
+                        <li><strong>Recommended version:</strong> Commit 86aed2f contains the most complete and polished version.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio-column">
+            <h2 class="section-title">Java Portfolio</h2>
+            
+            <div class="portfolio-section">
+                <h3 style="color: darkcyan; font-size: 20px; margin-bottom: 15px;">Working Repositories</h3>
+                
+                <div class="project-item">
+                    <a href="https://github.com/LizzieMerrill/JavaAddressBook" class="project-link" target="_blank">JavaAddressBook</a>
+                    <p class="project-description">
+                        Fully functional address book built in Java.
+                    </p>
+                </div>
+                
+                <div class="project-item">
+                    <a href="https://github.com/LizzieMerrill/LibraryBookLab" class="project-link" target="_blank">LibraryBookLab</a>
+                    <p class="project-description">
+                        Library management system that supports borrowing, returning, and searching for books.
+                    </p>
+                </div>
+                
+                <div class="project-item">
+                    <a href="https://github.com/LizzieMerrill/LoopMapExercise" class="project-link" target="_blank">LoopMapExercise</a>
+                    <p class="project-description">
+                        Includes VirtualSalesmanWithHashMap.java, exploring HashMap usage and key-value pair logic.
+                    </p>
+                </div>
+                
+                <div class="project-item">
+                    <a href="https://github.com/LizzieMerrill/leetcode-problems" class="project-link" target="_blank">leetcode-problems</a>
+                    <p class="project-description">
+                        Solution to LeetCode "boomerangs" problem, developed during a live interview with Professor Reynolds at BYU.
+                    </p>
+                </div>
+                
+                <div class="project-item">
+                    <a href="https://github.com/LizzieMerrill/JavaControlFlow" class="project-link" target="_blank">JavaControlFlow</a>
+                    <p class="project-description">
+                        Powerball questionnaire and calculator featuring regex and ASCII-based input validation; an in-depth exercise in control flow logic. (One known edge-case bug.)
+                    </p>
+                </div>
+            </div>
+            
+            <div class="portfolio-section">
+                <h3 style="color: darkcyan; font-size: 20px; margin-bottom: 15px;">Relevant Non-Working Repositories</h3>
+                
+                <div class="project-item">
+                    <a href="https://github.com/LizzieMerrill/chess" class="project-link" target="_blank">chess</a>
+                    <p class="project-description">
+                        My most advanced Java project and closest experience to true Java software engineering. Developed for BYU's CS 240 course, this project introduced me to:
+                    </p>
+                    <ul class="project-description">
+                        <li>Client–server architecture</li>
+                        <li>WebSocket integration</li>
+                        <li>Request/response handling</li>
+                        <li>Complex logic programming including move validation, check/checkmate/stalemate detection, and pawn-specific move rules</li>
+                    </ul>
+                    <p class="project-description">
+                        Although the build currently fails, this was my first exposure to working within a larger codebase and developing advanced logic under real software engineering constraints. <strong>For a look at the core logic, see:</strong>
+                    </p>
+                    <ul class="project-description">
+                        <li><code>shared/src/main/java/chess/ChessPiece.java</code></li>
+                        <li><code>shared/src/main/java/chess/ChessGame.java</code></li>
+                    </ul>
+                    <p class="project-description">
+                        I later expanded on these concepts in my CS 340 Software Design course and through my web development internships at BYU.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
